@@ -110,6 +110,10 @@ module.exports = (sequelize, DataTypes) => {
           len: [3,256],
         } 
       },
+      token: {
+        type: DataTypes.STRING,
+        unique: true
+      },
       hashedPassword: {
         type: DataTypes.STRING.BINARY,
         allowNull: false,
